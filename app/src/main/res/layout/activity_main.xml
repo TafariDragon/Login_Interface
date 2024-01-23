@@ -7,19 +7,112 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="Login App Programar é Fácil"
-        android:layout_marginTop="50dp"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/nlogo"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Login App Programar é Fácil"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/txtID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:hint="Introduza o seu ID"
+            android:singleLine="false"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:textStyle="italic">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="Introduza sua Senha"
+            android:singleLine="false"
+            android:textSize="20sp"
+            android:textStyle="italic">
+        </EditText>
+
+
+
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Entrar"
+            android:textSize="20sp"
+            android:textStyle="italic">
+        </Button>
+
+        <Button
+            android:id="@+id/btnCriar"
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#191D20"
+            android:text="Criar"
+            android:textSize="20sp"
+            android:textStyle="italic"></Button>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Desenvolvido por Tafari Vilanculos"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="italic"></TextView>
+    </LinearLayout>
+
+
 
 </LinearLayout>
