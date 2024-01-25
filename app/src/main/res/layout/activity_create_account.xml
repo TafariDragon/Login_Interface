@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CreateAccount">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar Conta"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"></TextView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="Nome Usuario">
+        </EditText>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="Apelido Usuario">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="Seuemail@gamil"
+            android:inputType="textEmailAddress">
+        </EditText>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="15762">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:text="Criar Conta"
+        android:textSize="20sp"
+        android:textStyle="italic"></Button>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:text="Sair"
+        android:textSize="20sp"
+        android:textStyle="italic"></Button>
+
+
+</LinearLayout>
