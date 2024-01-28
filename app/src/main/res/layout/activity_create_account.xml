@@ -56,7 +56,29 @@
         </EditText>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="Crie Uma Senha"
+            android:inputType="textPassword">
+        </EditText>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="Confirme o Password"
+            android:inputType="textPassword">
+        </EditText>
+    </LinearLayout>
+
     <Button
+        android:id="@+id/btnCriarConta"
         android:layout_width="250dp"
         android:layout_height="75dp"
         android:layout_marginTop="10dp"
@@ -65,6 +87,7 @@
         android:textStyle="italic"></Button>
 
     <Button
+        android:id="@+id/btnSair"
         android:layout_width="250dp"
         android:layout_height="75dp"
         android:layout_marginTop="20dp"

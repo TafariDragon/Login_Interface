@@ -1,5 +1,6 @@
 package com.example.login_interface
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
+        binding.btnCriar.setOnClickListener {
+            startActivity(Intent(this,CreateAccount::class.java))
+        }
 
     }
 }
