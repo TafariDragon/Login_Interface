@@ -22,7 +22,10 @@ class MainActivity : AppCompatActivity() {
             {
                 Toast.makeText(this, "Campos vazios", Toast.LENGTH_LONG).show()
             }else if(id.equals("123")&& senha.equals("Tafari")){
-                Toast.makeText(this, "Seja Bem Vindo :)", Toast.LENGTH_SHORT).show()
+                 var nome="Tafari"
+                 var i = Intent(this,TelaInicial::class.java).putExtra("usuario",nome)
+                 startActivity(i)
+
             }else{
                 Toast.makeText(this,"id ou senha incorrecta",Toast.LENGTH_LONG).show()
             }
